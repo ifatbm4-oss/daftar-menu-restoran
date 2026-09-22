@@ -1,15 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f2f6ff;
-    color: #333;
+    color: #000000;
+}
+
+body.home {
+    background-color: #ffe0b2;
+}
+
+body.menu {
+    background-color: #b3e5fc;
+}
+
+body.tentang {
+    background-color: #c8e6c9;
+}
+
+body.kontak {
+    background-color: #f8bbd0;
 }
 
 header {
-    background-color: #1e3a8a;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     padding: 25px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
@@ -17,7 +33,7 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     margin: 0 12px;
     padding: 10px 15px;
@@ -25,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3b82f6;
+    background-color: #ffd54f;
 }
 
 main {
@@ -38,13 +54,13 @@ main {
 }
 
 h2 {
-    color: #1e3a8a;
+    color: #000000;
 }
 
 li {
     margin: 12px;
     padding: 12px;
-    background-color: #dbeafe;
+    background-color: #f3dbfe;
     border-radius: 8px;
     list-style: none;
 }
