@@ -1,66 +1,225 @@
-body {
-    font-family: Arial, sans-serif;
+/* RESET & DESAIN UMUM */
+* {
     margin: 0;
-    color: #000000;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* WARNA LATAR BELAKANG HALAMAN LENGKAP CERAH */
 body.home {
-    background-color: #ffe0b2;
+    background-color: #f0fdf4; /* Hijau Mint Muda Segar */
+    color: #2d3748;
 }
 
 body.menu {
-    background-color: #b3e5fc;
+    background-color: #fffbe3; /* Kuning Warm Segar */
+    color: #2d3748;
 }
 
 body.tentang {
-    background-color: #c8e6c9;
+    background-color: #f0f9ff; /* Biru Langit Cerah Ceria */
+    color: #2d3748;
 }
 
 body.kontak {
-    background-color: #f8bbd0;
+    background-color: #fef2f2; /* Merah Muda Soft Segar */
+    color: #2d3748;
 }
 
-header {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 25px;
+/* TABEL LAYOUT UTAMA */
+.layout-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* HEADER & NAVIGASI (Warna Teal Tropis Cerah) */
+.header-cell {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: #ffffff;
+    padding: 22px 0;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0 0 20px;
+    font-size: 30px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 12px;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 9px 20px;
+    margin: 0 6px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #ffd54f;
+nav a:hover, nav a.active {
+    background-color: #ff6b6b; /* Accent Merah Coral Cerah */
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(255, 107, 107, 0.4);
 }
 
-main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* HERO BANNER CELL */
+.hero-cell {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px;
 }
 
-h2 {
-    color: #000000;
+.hero-content h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
-li {
-    margin: 12px;
-    padding: 12px;
-    background-color: #f3dbfe;
-    border-radius: 8px;
-    list-style: none;
+.hero-content p {
+    font-size: 17px;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* MAIN CONTENT CELL */
+.main-cell {
+    padding: 40px 20px;
+    background-color: transparent;
+}
+
+.section-title {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+/* TABEL OBJEK WISATA, MENU, & KONTAK (Tampilan Cerah) */
+.wisata-table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.wisata-table th {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient Oranye Cerah Segar */
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wisata-table td {
+    border-bottom: 1px solid #edf2f7;
+    padding: 16px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.wisata-table tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+.wisata-table tr:hover {
+    background-color: #f0fdf4;
+}
+
+.wisata-table h3 {
+    color: #0284c7;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* HARGA & BADGE AKSER KECIL */
+.price {
+    color: #e11d48;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* THUMBNAIL GAMBAR */
+.img-thumb {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #e2e8f0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.img-thumb:hover {
+    transform: scale(1.04);
+}
+
+/* FORMULIR INPUT KONTAK */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    border: 2px solid #cbd5e1 !important;
+    background-color: #f8fafc;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0284c7 !important;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+    color: white;
+    font-size: 15px;
+    padding: 12px 25px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease !important;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #059669, #047857) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(16, 185, 129, 0.4);
+}
+
+/* FOOTER (Warna Dark Blue Elegan) */
+.footer-cell {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }

@@ -4,35 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Restoran</title>
-
+    <title>Daftar Menu - Restoran Nusantara</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="menu">
 
-    <header>
-        <h1>Menu Restoran</h1>
+    <!-- TABEL UTAMA UNTUK TATA LETAK HALAMAN MENU -->
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="layout-table">
+        
+        <!-- HEADER & NAVIGASI -->
+        <tr>
+            <td class="header-cell">
+                <header>
+                    <h1>Restoran Nusantara</h1>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="menu.html" class="active">Menu</a>
+                        <a href="tentang.html">Tentang Kami</a>
+                        <a href="kontak.html">Kontak</a>
+                    </nav>
+                </header>
+            </td>
+        </tr>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="tentang.html">Tentang Kami</a>
-            <a href="kontak.html">Kontak</a>
-        </nav>
-    </header>
+        <!-- BANNER HALAMAN MENU -->
+        <tr>
+            <td class="hero-cell" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80');">
+                <div class="hero-content">
+                    <h2>Daftar Menu Restoran</h2>
+                    <p>Nikmati ragam hidangan khas Nusantara lezat yang disajikan dengan bahan-bahan terbaik dan bumbu rempah pilihan.</p>
+                </div>
+            </td>
+        </tr>
 
-    <main>
-        <h2>Daftar Menu</h2>
+        <!-- KONTEN UTAMA: GALERI TABEL MENU -->
+        <tr>
+            <td class="main-cell">
+                <main>
+                    <h2 class="section-title">Menu Makanan & Minuman Favorit</h2>
+                    <p class="section-subtitle">Berikut adalah pilihan menu andalan kami beserta foto dan harganya:</p>
 
-        <ul>
-            <li>Nasi Goreng</li>
-            <li>Mie Goreng</li>
-            <li>Sate Ayam</li>
-            <li>Ayam Bakar</li>
-            <li>Es Teh Manis</li>
-        </ul>
-    </main>
+                    <!-- TABEL DAFTAR MENU -->
+                    <table border="1" cellpadding="12" cellspacing="0" class="wisata-table menu-table">
+                        <thead>
+                            <tr>
+                                <th width="8%">No</th>
+                                <th width="25%">Foto Menu</th>
+                                <th width="35%">Nama & Deskripsi Menu</th>
+                                <th width="17%">Kategori</th>
+                                <th width="15%">Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- MENU 1 -->
+                            <tr>
+                                <td align="center"><b>1</b></td>
+                                <td align="center">
+                                    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=400&q=80" alt="Nasi Goreng Spesial" class="img-thumb">
+                                </td>
+                                <td>
+                                    <h3>Nasi Goreng Spesial</h3>
+                                    <p>Nasi goreng rempah khas Nusantara disajikan dengan telor mata sapi, ayam suwir, kerupuk, dan acar segar.</p>
+                                </td>
+                                <td align="center">Makanan Utama</td>
+                                <td align="center"><b class="price">Rp 25.000</b></td>
+                            </tr>
+
+                            <!-- MENU 2 -->
+                            <tr>
+                                <td align="center"><b>2</b></td>
+                                <td align="center">
+                                    <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=400&q=80" alt="Mie Goreng Jawa" class="img-thumb">
+                                </td>
+                                <td>
+                                    <h3>Mie Goreng Jawa</h3>
+                                    <p>Mie telur yang ditumis dengan bumbu halus khas Jawa, bakso, potongan ayam, dan sayuran segar.</p>
+                                </td>
+                                <td align="center">Makanan Utama</td>
+                                <td align="center"><b class="price">Rp 23.000</b></td>
+                            </tr>
+
+                            <!-- MENU 3 -->
+                            <tr>
+                                <td align="center"><b>3</b></td>
+                                <td align="center">
+                                    <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=400&q=80" alt="Sate Ayam Madura" class="img-thumb">
+                                </td>
+                                <td>
+                                    <h3>Sate Ayam Bumbu Kacang</h3>
+                                    <p>Daging ayam pilihan yang dipanggang dengan arang, disiram bumbu kacang gurih manis, serta lontong.</p>
+                                </td>
+                                <td align="center">Makanan Utama</td>
+                                <td align="center"><b class="price">Rp 30.000</b></td>
+                            </tr>
+
+                            <!-- MENU 4 -->
+                            <tr>
+                                <td align="center"><b>4</b></td>
+                                <td align="center">
+                                    <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=400&q=80" alt="Ayam Bakar Taliwang" class="img-thumb">
+                                </td>
+                                <td>
+                                    <h3>Ayam Bakar Bumbu Rujak</h3>
+                                    <p>Ayam muda pilihan dibakar halus dengan lumuran bumbu rempah pedas manis dan lalapan segar.</p>
+                                </td>
+                                <td align="center">Makanan Utama</td>
+                                <td align="center"><b class="price">Rp 32.000</b></td>
+                            </tr>
+
+                            <!-- MENU 5 -->
+                            <tr>
+                                <td align="center"><b>5</b></td>
+                                <td align="center">
+                                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&q=80" alt="Es Teh Manis Segar" class="img-thumb">
+                                </td>
+                                <td>
+                                    <h3>Es Teh Manis</h3>
+                                    <p>Seduhan daun teh melati segar disajikan dingin dengan tingkat kemanisan pas untuk penyegar dahaga.</p>
+                                </td>
+                                <td align="center">Minuman</td>
+                                <td align="center"><b class="price">Rp 7.000</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </main>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td class="footer-cell">
+                <footer>
+                    <p>&copy; 2026 Restoran & Wisata Nusantara. Hak Cipta Dilindungi.</p>
+                </footer>
+            </td>
+        </tr>
+
+    </table>
 
 </body>
 

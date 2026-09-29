@@ -4,35 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restoran Nusantara</title>
-
+    <title>Promosi Spesial - Restoran & Wisata Nusantara</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="home">
 
-    <header>
-        <h1>Restoran Nusantara</h1>
+    <!-- TABEL UTAMA UNTUK TATA LETAK SELURUH HALAMAN -->
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="layout-table">
+        
+        <!-- HEADER & NAVIGASI -->
+        <tr>
+            <td class="header-cell">
+                <header>
+                    <h1>Restoran & Wisata Nusantara</h1>
+                    <nav>
+                        <a href="index.html" class="active">Home</a>
+                        <a href="#promo-kode">Kode Promo</a>
+                        <a href="#tabel-promo">Menu & Wisata</a>
+                        <a href="#klaim-promo">Klaim Promo</a>
+                        <a href="kontak.html">Kontak & Reservasi</a>
+                    </nav>
+                </header>
+            </td>
+        </tr>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="tentang.html">Tentang Kami</a>
-            <a href="kontak.html">Kontak</a>
-        </nav>
-    </header>
+        <!-- BANNER HERO PROMOSI -->
+        <tr>
+            <td class="hero-cell">
+                <div class="hero-content">
+                    <h2>🔥 PROMO SPESIAL KULINER & WISATA NUSANTARA 🔥</h2>
+                    <p>Nikmati diskon makan hingga 30% di restoran kami yang berlokasi di dekat destinasi wisata terpopuler Indonesia!</p>
+                </div>
+            </td>
+        </tr>
 
-    <main>
-        <h2>Selamat Datang</h2>
+        <!-- KONTEN UTAMA HALAMAN -->
+        <tr>
+            <td class="main-cell">
+                <main>
 
-        <p>
-            Selamat datang di Restoran Nusantara.
-        </p>
+                    <!-- SEKSI 1: TABEL KODE VOUCHER PROMO -->
+                    <div id="promo-kode" align="center">
+                        <h2 class="section-title">Daftar Kode Promo Restoran Aktif</h2>
+                        <p class="section-subtitle">Gunakan kode promo berikut saat melakukan pemesanan atau reservasi meja:</p>
 
-        <p>
-            Kami menyediakan berbagai menu makanan dan minuman.
-        </p>
-    </main>
+                        <table border="1" cellpadding="12" cellspacing="0" class="wisata-table" style="max-width: 900px; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th>KODE PROMO</th>
+                                    <th>NAMA PROMO</th>
+                                    <th>BESAR DISKON</th>
+                                    <th>SYARAT & KETENTUAN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b style="background-color: #fef08a; padding: 6px 12px; border: 2px dashed #ca8a04; border-radius: 6px; font-size: 16px;">WISATAKULINER20</b></td>
+                                    <td>Promo Jelajah Wisata</td>
+                                    <td><b class="price">Diskon 20%</b></td>
+                                    <td>Min. transaksi Rp 100.000 di seluruh cabang restoran wisata.</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="background-color: #fef08a; padding: 6px 12px; border: 2px dashed #ca8a04; border-radius: 6px; font-size: 16px;">HEBATSANTAP30</b></td>
+                                    <td>Promo Paket Rombongan</td>
+                                    <td><b class="price">Diskon 30%</b></td>
+                                    <td>Khusus reservasi kelompok/rombongan minimal 5 orang.</td>
+                                </tr>
+                                <tr>
+                                    <td><b style="background-color: #fef08a; padding: 6px 12px; border: 2px dashed #ca8a04; border-radius: 6px; font-size: 16px;">GRATISESMUMU</b></td>
+                                    <td>Promo Minuman Segar</td>
+                                    <td><b class="price">Gratis Es Teh</b></td>
+                                    <td>Gratis 1 Es Teh Manis setiap pembelian Nasi/Mie Goreng Spesial.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br><br><hr><br><br>
+
+                    <!-- SEKSI 2: TABEL DUA-IN-SATU (PROMO MENU & TEMPAT WISATA) -->
+                    <div id="tabel-promo">
+                        <h2 class="section-title">Paket Promo Menu Restoran & Objek Wisata Terdekat</h2>
+                        <p class="section-subtitle">Sajian hidangan khas restoran yang terhubung langsung dengan lokasi destinasi wisata:</p>
+
+                        <table border="1" cellpadding="12" cellspacing="0" class="wisata-table">
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>FOTO MENU</th>
+                                    <th>DETAIL MENU RESTORAN</th>
+                                    <th>HARGA PROMO</th>
+                                    <th>FOTO WISATA</th>
+                                    <th>LOKASI TEMPAT WISATA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- PAKET 1 -->
+                                <tr>
+                                    <td align="center"><b>1</b></td>
+                                    <td align="center" width="150">
+                                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=400&q=80" alt="Nasi Goreng Spesial" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Nasi Goreng Spesial Nusantara</h3>
+                                        <p>Nasi goreng rempah lengkap dengan ayam suwir, telur mata sapi, dan kerupuk[cite: 4].</p>
+                                    </td>
+                                    <td align="center">
+                                        <s style="color: #94a3b8;">Rp 30.000</s><br>
+                                        <b class="price">Rp 25.000</b>
+                                    </td>
+                                    <td align="center" width="150">
+                                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&q=80" alt="Pantai Kuta Bali" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Pantai Kuta, Bali</h3>
+                                        <p><b>Cabang:</b> Kuta Badung, Bali</p>
+                                        <p>Dekat lokasi sunset Pantai Kuta yang memukau.</p>
+                                    </td>
+                                </tr>
+
+                                <!-- PAKET 2 -->
+                                <tr>
+                                    <td align="center"><b>2</b></td>
+                                    <td align="center">
+                                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=400&q=80" alt="Sate Ayam" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Sate Ayam Bumbu Kacang</h3>
+                                        <p>Sate ayam bakar khas dengan racikan bumbu kacang gurih manis dan lontong[cite: 4].</p>
+                                    </td>
+                                    <td align="center">
+                                        <s style="color: #94a3b8;">Rp 38.000</s><br>
+                                        <b class="price">Rp 30.000</b>
+                                    </td>
+                                    <td align="center">
+                                        <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=400&q=80" alt="Candi Borobudur" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Candi Borobudur, Magelang</h3>
+                                        <p><b>Cabang:</b> Borobudur, Magelang</p>
+                                        <p>Berada di sekitar kemegahan Candi Borobudur.</p>
+                                    </td>
+                                </tr>
+
+                                <!-- PAKET 3 -->
+                                <tr>
+                                    <td align="center"><b>3</b></td>
+                                    <td align="center">
+                                        <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80" alt="Bebek Goreng Crispy" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Bebek Goreng Crispy Sambal Matah</h3>
+                                        <p>Bebek goreng garing renyah dipadu sambal matah pedas menyegarkan.</p>
+                                    </td>
+                                    <td align="center">
+                                        <s style="color: #94a3b8;">Rp 100.000</s><br>
+                                        <b class="price">Rp 85.000</b>
+                                    </td>
+                                    <td align="center">
+                                        <img src="https://images.unsplash.com/photo-1516690561799-46d8f74df9ab?auto=format&fit=crop&w=400&q=80" alt="Raja Ampat" class="img-thumb">
+                                    </td>
+                                    <td>
+                                        <h3>Raja Ampat, Papua Barat</h3>
+                                        <p><b>Cabang:</b> Pianemo, Papua</p>
+                                        <p>Restoran tepi pantai dengan panorama gugusan karang.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br><br><hr><br><br>
+
+                    <!-- SEKSI 3: FORMULIR KLAIM PROMO & RESERVASI -->
+                    <div id="klaim-promo" align="center">
+                        <h2 class="section-title">Formulir Klaim Diskon & Reservasi Tempat</h2>
+                        <p class="section-subtitle">Isi data di bawah ini untuk mendapatkan voucher potongan harga otomatis:</p>
+
+                        <table border="0" cellpadding="10" cellspacing="0" class="wisata-table" style="max-width: 700px; text-align: left;">
+                            <tr>
+                                <td>
+                                    <form action="#" method="post">
+                                        <table border="0" width="100%" cellpadding="8">
+                                            <tr>
+                                                <td width="35%"><b>Nama Lengkap</b></td>
+                                                <td><input type="text" placeholder="Masukkan nama Anda..." style="width: 100%; padding: 8px;" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Nomor WhatsApp</b></td>
+                                                <td><input type="tel" placeholder="Contoh: 0821-4327-484" style="width: 100%; padding: 8px;" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Pilih Kode Promo</b></td>
+                                                <td>
+                                                    <select style="width: 100%; padding: 8px;">
+                                                        <option>WISATAKULINER20 (Diskon 20%)</option>
+                                                        <option>HEBATSANTAP30 (Diskon 30%)</option>
+                                                        <option>GRATISESMUMU (Gratis Es Teh)</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Tanggal Kunjungan</b></td>
+                                                <td><input type="date" style="width: 100%; padding: 8px;" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top;"><b>Catatan Reservasi</b></td>
+                                                <td><textarea rows="3" placeholder="Contoh: Reservasi 4 orang jam 18.00 WIB" style="width: 100%; padding: 8px;"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <button type="submit">Klaim Promo & Reservasi Sekarang</button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </main>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td class="footer-cell">
+                <footer>
+                    <p>&copy; 2026 Restoran & Wisata Nusantara. Hak Cipta Dilindungi.</p>
+                </footer>
+            </td>
+        </tr>
+
+    </table>
 
 </body>
 

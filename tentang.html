@@ -4,33 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami</title>
-
+    <title>Tentang Kami - Restoran Nusantara</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="tentang">
 
-    <header>
-        <h1>Tentang Kami</h1>
+    <!-- TABEL UTAMA UNTUK TATA LETAK HALAMAN TENTANG KAMI -->
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" class="layout-table">
+        
+        <!-- HEADER & NAVIGASI -->
+        <tr>
+            <td class="header-cell">
+                <header>
+                    <h1>Restoran Nusantara</h1>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="tentang.html" class="active">Tentang Kami</a>
+                        <a href="kontak.html">Kontak</a>
+                    </nav>
+                </header>
+            </td>
+        </tr>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="tentang.html">Tentang Kami</a>
-            <a href="kontak.html">Kontak</a>
-        </nav>
-    </header>
+        <!-- BANNER HALAMAN TENTANG KAMI -->
+        <tr>
+            <td class="hero-cell" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80');">
+                <div class="hero-content">
+                    <h2>Tentang Restoran Nusantara</h2>
+                    <p>Mengenal lebih dekat cita rasa kuliner warisan leluhur dan komitmen kami menyajikan hidangan khas Indonesia berkualitas.</p>
+                </div>
+            </td>
+        </tr>
 
-    <main>
-        <h2>Tentang Restoran Nusantara</h2>
+        <!-- KONTEN UTAMA: PROFIL RESTORAN & LOKASI -->
+        <tr>
+            <td class="main-cell">
+                <main>
+                    
+                    <!-- TABEL INFORMASI PROFIL RESTORAN -->
+                    <table border="1" cellpadding="15" cellspacing="0" class="wisata-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Profil & Cerita Restoran Nusantara</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="40%" align="center">
+                                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Suasana Restoran Nusantara" class="img-thumb" style="width:100%; height:auto; max-width:380px;">
+                                </td>
+                                <td width="60%">
+                                    <h3>Tentang Kami</h3>
+                                    <p><b>Restoran Nusantara</b> didirikan dengan tekad untuk melestarikan dan mempromosikan keanekaragaman kuliner tradisional khas Indonesia. Kami menghadirkan aneka hidangan dari Sabang sampai Merauke yang dimasak mengaplikasikan resep otentik dengan rempah-rempah pilihan terbaik.</p>
+                                    <br>
+                                    <h3>Visi & Misi Kami</h3>
+                                    <p><b>Visi:</b> Menjadi restoran kuliner tradisional Indonesia terdepan yang memadukan kelezatan rasa khas dengan pengalaman wisata kuliner yang tak terlupakan.</p>
+                                    <p><b>Misi:</b> Menyajikan makanan higienis, lezat, dan terjangkau serta memberikan pelayanan yang ramah bagi setiap pelanggan lokal maupun mancanegara.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <p>
-            Restoran Nusantara merupakan restoran yang
-            menyediakan berbagai macam makanan dan minuman
-            khas Indonesia.
-        </p>
-    </main>
+                    <br><br>
+
+                    <!-- TABEL ALAMAT DAN SERLOK GOOGLE MAPS -->
+                    <h2 class="section-title">Alamat & Serlok Lokasi Restoran</h2>
+                    
+                    <table border="1" cellpadding="15" cellspacing="0" class="wisata-table">
+                        <thead>
+                            <tr>
+                                <th width="35%">Detail Alamat & Jam Operasional</th>
+                                <th width="65%">Peta Serlok Lokasi (Google Maps)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <h3>📍 Alamat Restoran:</h3>
+                                    <p><b>Restoran Nusantara Utama</b><br>
+                                    Jl. MH Thamrin No. 12, Gondangdia, Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10350</p>
+                                    <br>
+                                    <h3>🕒 Jam Operasional:</h3>
+                                    <p><b>Senin - Jumat:</b> 09.00 - 22.00 WIB<br>
+                                    <b>Sabtu - Minggu:</b> 08.00 - 23.00 WIB</p>
+                                    <br>
+                                    <h3>📞 Hubungi Kami:</h3>
+                                    <p>Telepon: 0821-4327-484<br>
+                                    Email: ifatbm4@gmail.com</p>
+                                </td>
+                                <td align="center">
+                                    <!-- EMBED SERLOK GOOGLE MAPS -->
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427389417!2d106.82496411476882!3d-6.175392395529124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2db7da393%3A0x29c7d42d31293a0d!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" 
+                                        width="100%" 
+                                        height="280" 
+                                        style="border:0; border-radius: 8px;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                    <br><br>
+                                    <a href="https://maps.google.com/?q=Monumen+Nasional+Jakarta" target="_blank" style="background-color: #0d5c75; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 13px;">📍 Buka Serlok di Aplikasi Google Maps</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </main>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td class="footer-cell">
+                <footer>
+                    <p>&copy; 2026 Restoran & Wisata Nusantara. Hak Cipta Dilindungi.</p>
+                </footer>
+            </td>
+        </tr>
+
+    </table>
 
 </body>
 
